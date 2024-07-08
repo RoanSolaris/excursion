@@ -4,7 +4,7 @@ body {
     font-family: Verdana, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -17,14 +17,45 @@ header h1 {
     font-size: 50px;
 }
 
-header a {
+a {
     color: aquamarine;
     font-size: 16px;
 }
 
 #background-video {
-    position: absolute;
-    margin: 1% auto;
-    transform: translate(-50%, 0%);
-    z-index: -1;
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px 0; /* Center the video */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+main h1 {
+    font-weight: 300;
+    font-size: 42px;
+}
+
+p {
+    color: gray;
+    font-size: 21px;
+}
+
+
+#phone {
+    margin-top: 30px;
+}
+
+footer p {
+    text-align: right;
+    margin-right: 20px;
 }
