@@ -2,6 +2,9 @@ body {
     background-color: black;
     text-align: center;
     font-family: Verdana, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 h1 {
@@ -17,4 +20,11 @@ header h1 {
 header a {
     color: aquamarine;
     font-size: 16px;
+}
+
+#background-video {
+    position: absolute;
+    margin: 1% auto;
+    transform: translate(-50%, 0%);
+    z-index: -1;
 }
